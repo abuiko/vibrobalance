@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.8rem;
+  letter-spacing: 0.3rem;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.1rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #162b43;
+  text-decoration: none;
+}
+
+li,
+button,
+input,
+p {
+  font-size: 2rem;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  width: 95%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 60rem;
+  letter-spacing: 0.4rem;
+}
+nav ul li a {
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  color: #27292c;
+}
+#logo a {
+  font-size: 3.8rem;
+  letter-spacing: 0.3rem;
+  font-family: "Comfortaa", sans-serif;
+}
+
+#logo a:hover {
+  text-decoration: none;
+  color: #27292c;
+}
+
+nav.stroke ul li a {
+  position: relative;
+  padding: 1rem;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #162b43;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+.active {
+  font-weight: bold;
+}
+nav.stroke ul li .active:hover:after {
+  width: 0%;
+}
+.clients {
+  min-height: 90vh;
+  width: 100%;
+  margin: auto;
+}
+.clients h1 {
+  background: #162b43;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding: 2rem 7rem;
+  color: white;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+.column {
+  margin: 2rem;
+  padding: 2rem;
+  width: 40%;
+}
+.column ul {
+  list-style-type: disc;
+}
+.column ul li {
+  font-size: 1.8rem;
+  letter-spacing: 0rem;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 20vh;
+  padding: 4rem;
+  background: black;
+}
+
+.left {
+  flex: 1 1 0rem;
+  color: white;
+  line-height: 4rem;
+}
+
+.right {
+  flex: 1 1 0rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 1634px) {
+  html {
+    font-size: 59%;
+  }
+}
+@media screen and (max-width: 1420px) {
+  html {
+    font-size: 52%;
+  }
+  nav ul li a {
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 1264px) {
+  html {
+    font-size: 48%;
+  }
+  nav {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  #logo {
+    letter-spacing: 0.3rem;
+    margin-left: 1rem;
+  }
+  .columns {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 816px) {
+  #logo {
+    text-align: start;
+    margin: 0rem 2rem;
+  }
+  #logo h2 {
+    letter-spacing: 0.3rem;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .burger span {
+    padding: 0.3rem 3rem;
+    background: #162b43;
+    margin: 0.6rem 2rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .nav-links a {
+    color: white;
+    font-size: 4rem;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  .nav-links {
+    background: #162b43;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 1s ease;
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+  .clients h1 {
+    padding: 2rem 2rem;
+  }
+  .column {
+    width: 100%;
+    margin: 0rem 2rem;
+    padding: 0rem 2rem;
+  }
+  .columns {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  .right {
+    margin-top: 4rem;
+    letter-spacing: 0;
+  }
+}
+@media screen and (max-width: 634px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    padding: 2rem 0rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}
