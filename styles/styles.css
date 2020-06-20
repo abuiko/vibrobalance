@@ -112,7 +112,7 @@ nav.stroke ul li a:hover:after {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url("/img/cards-image.jpg");
+    url("../img/cards-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -251,7 +251,7 @@ nav.stroke ul li a:hover:after {
       rgba(0, 0, 0, 0.3),
       transparent
     ),
-    url("/img/photos.png");
+    url("../img/photos.png");
   background-size: cover;
   background-position: center;
 }
