@@ -1,0 +1,65 @@
+.clients {
+
+
+    &__head {
+        text-align: center;
+        margin-top: 3.75rem;
+
+        @include breakpoint-up(large) {
+            background: $darkGreen;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            font-size: 1.7rem;
+            width: 80%;
+            margin: 3.75rem auto 0;
+            line-height: 1.7;
+            color: white;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 3.75rem;
+        padding-top: 3.75rem;
+    }
+
+    &__column {
+
+
+        li {
+            line-height: 2;
+
+
+        }
+
+        li::before {
+            content: "\2022";
+            color: $darkGreen;
+            /* Change the color */
+            font-weight: bold;
+            display: inline-block;
+            width: 2em;
+
+        }
+    }
+
+
+}
+
+.footer__clients {
+    background: $darkGreen;
+    color: $white;
+
+    .footer-wrapper {
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+}
