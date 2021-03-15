@@ -26,11 +26,10 @@ h1 {
   font-size: 1.65rem;
   color: white;
   line-height: 1.6;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.7px;
   margin: 0 auto 2.8rem;
-  text-transform: uppercase;
   font-family: "Monserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media (min-width: 40em) {
@@ -53,7 +52,6 @@ h2 {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   color: #123a51;
-  text-transform: uppercase;
   width: 90%;
   margin: auto;
 }
@@ -178,6 +176,7 @@ li {
 @media (min-width: 64em) {
   .header nav {
     padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
   }
 }
 
