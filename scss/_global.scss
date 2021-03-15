@@ -20,28 +20,6 @@ body {
   }
 }
 
-h1 {
-  font-size: 1.65rem;
-  color: $white;
-  line-height: 1.6;
-  letter-spacing: 1.7px;
-  margin: 0 auto 2.8rem;
-  // text-transform: uppercase;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 500;
-
-  @include breakpoint-up(medium) {
-    font-size: 1.95rem;
-    line-height: 2;
-    width: 70%;
-  }
-
-  @include breakpoint-up(large) {
-    font-size: 2.1rem;
-
-  }
-}
-
 h2 {
 
   font-size: 1.3rem;
@@ -49,18 +27,15 @@ h2 {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   color: $gray;
-  // text-transform: uppercase;
   width: 90%;
   margin: auto;
 
   @include breakpoint-up(medium) {
-
     font-size: 1.7rem;
   }
 
   @include breakpoint-up(large) {
     font-size: 2.3rem;
-
   }
 }
 

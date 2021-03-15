@@ -6,6 +6,13 @@
     position: relative;
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
+    max-width: 90rem;
+    margin: auto;
+
+    @include breakpoint-up(medium) {
+      padding-left: 1.3rem;
+      padding-right: 1.3rem;
+    }
 
     @include breakpoint-up(large) {
       padding-top: 2.875rem;

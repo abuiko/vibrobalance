@@ -22,30 +22,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-h1 {
-  font-size: 1.65rem;
-  color: white;
-  line-height: 1.6;
-  letter-spacing: 1.7px;
-  margin: 0 auto 2.8rem;
-  font-family: "Monserrat", sans-serif;
-  font-weight: 500;
-}
-
-@media (min-width: 40em) {
-  h1 {
-    font-size: 1.95rem;
-    line-height: 2;
-    width: 70%;
-  }
-}
-
-@media (min-width: 64em) {
-  h1 {
-    font-size: 2.1rem;
-  }
-}
-
 h2 {
   font-size: 1.3rem;
   font-weight: 500;
@@ -171,6 +147,15 @@ li {
   position: relative;
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
+  max-width: 90rem;
+  margin: auto;
+}
+
+@media (min-width: 40em) {
+  .header nav {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -299,6 +284,30 @@ li {
 
 .hero__text {
   text-align: center;
+}
+
+.hero__text h1 {
+  font-size: 1.65rem;
+  color: white;
+  line-height: 1.6;
+  letter-spacing: 1.7px;
+  margin: 0 auto 2.8rem;
+  font-family: "Monserrat", sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 40em) {
+  .hero__text h1 {
+    font-size: 1.95rem;
+    line-height: 2;
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 2.7rem;
+  }
 }
 
 .hero__text a {
@@ -607,7 +616,8 @@ li {
     width: 60%;
     margin: 4.75rem auto 3rem;
     padding: 1rem 4rem;
-    line-height: 1.7;
+    line-height: 1.5;
+    font-size: 2rem;
     background: #113342;
     color: white;
   }
