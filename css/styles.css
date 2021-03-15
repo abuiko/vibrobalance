@@ -64,7 +64,7 @@ h2 {
 
 @media (min-width: 64em) {
   h2 {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -277,8 +277,8 @@ li {
 
 .hero__content {
   min-height: 37.75rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("/img/cards-image.jpg");
-  background-image: linear-gradient(to bottom, black, transparent), url("/img/cards-image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent)), url("../img/cards-image.jpg");
+  background-image: linear-gradient(to bottom, black, transparent), url("../img/cards-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -307,7 +307,7 @@ li {
   border-radius: 0.625rem;
   background: #113342;
   color: white;
-  font-size: 0.8875rem;
+  font-size: 0.875rem;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -324,8 +324,8 @@ li {
 }
 
 .about__content {
-  padding-top: 3.875rem;
-  padding-bottom: 3.875rem;
+  padding-top: 5.875rem;
+  padding-bottom: 5.875rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
