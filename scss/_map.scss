@@ -11,7 +11,7 @@
             min-height: 25rem;
             margin: 3rem;
             flex: 1;
-            background-image: url("/img/photos.png");
+            background-image: url("../img/photos.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -21,8 +21,7 @@
     &__text {
         padding-top: 4.5625rem;
         padding-bottom: 4.5625rem;
-        // padding-left: 1rem;
-        // padding-right: 1rem;
+
 
         li {
             font-size: 0.76rem;
