@@ -1,0 +1,29 @@
+.about {
+    &__content {
+        padding-top: 3.875rem;
+        padding-bottom: 3.875rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        @include breakpoint-up(medium) {
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
+            max-width: 90rem;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 3.625rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+
+            a {
+                color: $darkGreen;
+                font-weight: bold;
+            }
+        }
+    }
+}
