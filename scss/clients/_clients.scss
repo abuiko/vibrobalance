@@ -1,21 +1,22 @@
+.clients__head {
+    text-align: center;
+    margin-top: 3.75rem;
+
+    @include breakpoint-up(large) {
+        padding: 1rem 2rem;
+        font-weight: 500;
+        font-size: 1.7rem;
+        width: 80%;
+        margin: 3.75rem auto 0;
+        line-height: 1.7;
+        color: white;
+    }
+}
+
 .clients {
 
 
-    &__head {
-        text-align: center;
-        margin-top: 3.75rem;
 
-        @include breakpoint-up(large) {
-            background: $darkGreen;
-            padding: 1rem 2rem;
-            font-weight: 500;
-            font-size: 1.7rem;
-            width: 80%;
-            margin: 3.75rem auto 0;
-            line-height: 1.7;
-            color: white;
-        }
-    }
 
     &__content {
         display: flex;
@@ -29,9 +30,7 @@
 
 
         li {
-            line-height: 2;
-
-
+            line-height: 1.7;
         }
 
         li::before {

@@ -21,36 +21,40 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="overlay has-fade"></div>
-      <nav class="container flex flex-jc-sb flex-ai-c">
-        <a href="index.html" class="header__logo">Вибробаланс</a>
-        <a id="btnHamburger" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <div class="header__menu hide-for-mobile">
+    <div class="header-container">
+      <header class="header">
+        <nav class="container flex flex-jc-sb flex-ai-c">
+          <a href="index.html" class="header__logo">Вибробаланс</a>
+          <a id="btnHamburger" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__menu hide-for-mobile">
+            <a href="index.html#about">О Нас</a>
+            <a href="index.html#ourproduct">Наш Продукт</a>
+            <a class="active-nav" href="#">Галерея</a>
+            <a href="clients.html">Клиенты</a>
+            <a href="index.html#contact">Контакты</a>
+          </div>
+        </nav>
+        <div class="header__popup has-fade">
           <a href="index.html#about">О Нас</a>
           <a href="index.html#ourproduct">Наш Продукт</a>
           <a class="active-nav" href="#">Галерея</a>
           <a href="clients.html">Клиенты</a>
           <a href="index.html#contact">Контакты</a>
         </div>
-      </nav>
-      <div class="header__popup has-fade">
-        <a href="index.html#about">О Нас</a>
-        <a href="index.html#ourproduct">Наш Продукт</a>
-        <a class="active-nav" href="#">Галерея</a>
-        <a href="clients.html">Клиенты</a>
-        <a href="index.html#contact">Контакты</a>
-      </div>
-    </header>
-
+      </header>
+      <section>
+        <h2 class="gallery__head">
+          Наши пульты работают на следующих типах станков:
+        </h2>
+      </section>
+    </div>
+    
     <section id="gallery" class="gallery">
-      <h2 class="gallery__head">
-        Наши пульты работают на следующих типах станков:
-      </h2>
+      
       <div class="gallery__content container flex flex-jc-c flex-ai-c">
         <div class="gallery__photo">
           <img src="img/01.png" alt="" />

@@ -18,37 +18,43 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="overlay has-fade"></div>
-      <nav class="container flex flex-jc-sb flex-ai-c">
-        <a href="index.html" class="header__logo">Вибробаланс</a>
-        <a id="btnHamburger" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-        <div class="header__menu hide-for-mobile">
+    <div class="header-container">
+      <header class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="container flex flex-jc-sb flex-ai-c">
+          <a href="index.html" class="header__logo">Вибробаланс</a>
+          <a id="btnHamburger" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__menu hide-for-mobile">
+            <a href="index.html#about">О Нас</a>
+            <a href="index.html#ourproduct">Наш Продукт</a>
+            <a href="gallery.html">Галерея</a>
+            <a class="active-nav" href="#">Клиенты</a>
+            <a href="index.html#contact">Контакты</a>
+          </div>
+        </nav>
+        <div class="header__popup has-fade">
           <a href="index.html#about">О Нас</a>
           <a href="index.html#ourproduct">Наш Продукт</a>
           <a href="gallery.html">Галерея</a>
           <a class="active-nav" href="#">Клиенты</a>
           <a href="index.html#contact">Контакты</a>
         </div>
-      </nav>
-      <div class="header__popup has-fade">
-        <a href="index.html#about">О Нас</a>
-        <a href="index.html#ourproduct">Наш Продукт</a>
-        <a href="gallery.html">Галерея</a>
-        <a class="active-nav" href="#">Клиенты</a>
-        <a href="index.html#contact">Контакты</a>
-      </div>
-    </header>
-    <section class="clients">
-      <div class="clients__wrapper container">
+      </header>
+      <section>
         <h2 class="clients__head">
           Наши пульты (под торговым названием VIB2-01 и KINERGO) работают с
           балансировочными станками на предприятиях:
         </h2>
+      </section>
+    </div>
+    
+    <section class="clients">
+      <div class="clients__wrapper container">
+        
         <div class="clients__content">
           <ul class="clients__column">
             <li>Институт ядерной энергетики (п. Сосны, Беларусь)</li>
