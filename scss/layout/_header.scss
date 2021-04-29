@@ -19,7 +19,6 @@
 
 
       @include breakpoint-up(large) {
-
         padding: 2.875rem 1rem;
       }
     }
@@ -27,7 +26,6 @@
     // Hamburger open styles
 
     &.open {
-
 
       .header__toggle {
         >span:first-child {
@@ -73,11 +71,12 @@
 
     &__menu {
       a {
-        color: #fff;
-        font-size: 1.1rem;
-        letter-spacing: 0.15rem;
-        font-family: "Montserrat", sans-serif;
 
+        color: #fff;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        letter-spacing: 1.2px;
 
       }
 
@@ -88,7 +87,7 @@
 
 
       .active-nav {
-        background: $darkGreen;
+        border: 1px solid #fff;
         color: $white;
         padding: 0.45rem 1rem;
         border-radius: 20px;
@@ -130,7 +129,4 @@
     }
 
   }
-
-
-
 }

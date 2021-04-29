@@ -7,7 +7,7 @@
         align-items: center;
 
         @include breakpoint-up(large) {
-            min-height: 640px;
+            min-height: 720px;
             align-items: flex-start;
         }
     }
