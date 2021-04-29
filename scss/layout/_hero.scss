@@ -1,21 +1,30 @@
 .hero {
     &__content {
-        min-height: 37.75rem;
-
+        min-height: 32rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @include breakpoint-up(large) {
+            min-height: 640px;
+            align-items: flex-start;
+        }
     }
 
     &__text {
         text-align: center;
 
+        @include breakpoint-up(large) {
+            text-align: left;
+            margin-left: 2rem;
+        }
+
         h1 {
             font-size: 1.65rem;
             color: $white;
             line-height: 1.6;
-            letter-spacing: 1.7px;
+            letter-spacing: 2px;
             margin: 0 auto 2.8rem;
             font-family: "Monserrat", sans-serif;
             font-weight: 500;
@@ -27,28 +36,27 @@
             }
 
             @include breakpoint-up(large) {
-                font-size: 2.7rem;
+                font-size: 2.6rem;
+                margin: 0 0 1rem;
+                letter-spacing: 3.2px;
+                line-height: 1.5;
+                font-weight: bold;
 
             }
         }
 
-        a {
-            display: inline-block;
-            padding: 0.7rem 1.25rem;
-            border-radius: 0.625rem;
-            background: $darkGreen;
-            color: $white;
-            font-size: 0.875rem;
-            transition: all 300ms ease-in-out;
+        p {
+            display: none;
 
-            &:hover {
-                background: rgb(17, 17, 17);
-            }
-
-            @include breakpoint-up(medium) {
-                font-size: 1rem;
-                padding: 0.9rem 1.8rem;
+            @include breakpoint-up(large) {
+                display: block;
+                color: #fff;
+                font-size: 1.2rem;
+                max-width: 650px;
+                margin-bottom: 2rem;
             }
         }
+
+
     }
 }
