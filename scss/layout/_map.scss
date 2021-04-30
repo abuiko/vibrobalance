@@ -8,11 +8,13 @@
     }
 
     &__image {
+
         @include breakpoint-up(large) {
+            position: relative;
             min-height: 25rem;
             margin: 3rem;
             flex: 1;
-            background-image: url("../img/photos.png");
+            background-image: linear-gradient(to bottom, #000, transparent), url("../img/photos.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
