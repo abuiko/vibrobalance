@@ -30,7 +30,7 @@
 }
 
 .footer {
-    background: $lightGray;
+    background: rgb(28, 28, 29);
 
     .footer-wrapper {
         @include breakpoint-up(medium) {
@@ -47,6 +47,7 @@
             font-size: 0.625rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
+            color: #fff;
 
             @include breakpoint-up(medium) {
                 font-size: 1rem;
@@ -59,6 +60,7 @@
         p {
             font-size: 0.5625rem;
             font-weight: bold;
+            color: #fff;
 
             @include breakpoint-up(medium) {
                 font-size: 1rem;

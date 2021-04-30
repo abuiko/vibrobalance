@@ -1,5 +1,5 @@
 .header-container {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent), url("../../dist/img/cards-image.jpg");
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent), linear-gradient(to left, #b38647, transparent), url("../../dist/img/cards-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,8 +75,12 @@
         color: #fff;
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
+        font-weight: bold;
         letter-spacing: 1.2px;
+
+        &:hover {
+          color: #FFC266;
+        }
 
       }
 
