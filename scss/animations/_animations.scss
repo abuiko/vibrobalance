@@ -2,22 +2,18 @@
 //   visibility: hidden;
 // }
 
-// @keyframes fade-in {
-//   from {
-//     visibility: hidden;
-//     opacity: 0;
-//   }
+@keyframes fade-in {
+    0% {
 
-//   1% {
-//     visibility: visible;
-//     opacity: 0;
-//   }
+        opacity: 0;
+    }
 
-//   to {
-//     visibility: visible;
-//     opacity: 1;
-//   }
-// }
+
+    100% {
+
+        opacity: 1;
+    }
+}
 
 // .fade-in {
 //   animation: fade-in 200ms ease-in-out forwards;

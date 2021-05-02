@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
 
+
   .header {
     position: relative;
     z-index: 1;
@@ -93,8 +94,12 @@
       .active-nav {
         border: 1px solid #fff;
         color: $white;
-        padding: 0.45rem 1rem;
-        border-radius: 20px;
+        padding: 0.55rem 1.3rem;
+        border-radius: 10px;
+
+        &:hover {
+          border: 1px solid #FFC266;
+        }
       }
     }
 

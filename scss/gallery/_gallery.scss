@@ -1,22 +1,23 @@
 .gallery__head {
     text-align: center;
-    padding-top: 3.75rem;
-    padding-bottom: 2rem;
+    padding: 2.5rem 0rem 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
 
 
     @include breakpoint-up(large) {
         width: 60%;
         margin: 4.75rem auto 3rem;
         padding: 1rem 2rem 5rem;
-        line-height: 1.5;
-        font-size: 2rem;
-
-        color: white;
-
+        font-size: 2.6rem;
     }
 }
 
 .gallery {
+    max-width: 1550px;
+    margin: auto;
+    padding: 0rem 2rem;
 
     &__content {
         padding-top: 2.5rem;
@@ -28,20 +29,24 @@
     &__photo {
         margin: 0.625rem;
         height: 25.125rem;
-        border: 1px solid $lightGray;
+        // border: 1px solid $lightGray;
         box-shadow: 5px 5px 13px #b3b3b3;
-        width: 18.75rem;
-        padding: 0.925rem;
+        width: 20.75rem;
+        // padding: 0.925rem;
 
         p {
-            margin-top: 2rem;
+            margin: 0rem;
+            padding: 1rem;
         }
 
         img {
             width: 100%;
+
             object-fit: contain;
         }
     }
+
+
 }
 
 .back {

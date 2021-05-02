@@ -1,10 +1,28 @@
+.divider {
+    &__image {
+        background-image: url("../../dist/img/photos.png");
+        background-size: cover;
+        min-height: 11.125rem;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include breakpoint-up(medium) {
+            min-height: 18.75rem;
+        }
+
+        @include breakpoint-up(medium) {
+            min-height: 22.75rem;
+            background-position: left center;
+        }
+    }
+}
+
+
 .map {
     @include breakpoint-up(large) {
         display: flex;
         padding-top: 7.5rem;
         padding-bottom: 6.25rem;
-
-
     }
 
     &__image {
@@ -14,7 +32,7 @@
             min-height: 25rem;
             margin: 3rem;
             flex: 1;
-            background-image: linear-gradient(to bottom, #000, transparent), url("../img/photos.png");
+            background-image: url("../../dist/img/photos.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,25 +43,20 @@
         padding-top: 4.5625rem;
         padding-bottom: 4.5625rem;
 
-
-        li {
-            font-size: 0.76rem;
-        }
-
         @include breakpoint-up(medium) {
             flex: 1;
-
-            li {
-                font-size: 1.04rem;
-                font-weight: lighter;
-            }
+            margin: 3.5rem 0rem;
+            padding: 0rem;
         }
     }
 
     &__head {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
+        color: #000;
+        font-weight: 500;
+        width: 100%;
 
         @include breakpoint-up(medium) {
             font-size: 1.5rem;
@@ -51,21 +64,30 @@
         }
 
         @include breakpoint-up(large) {
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
     }
 
     &__lists {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        text-align: center;
 
+        h4 {
+            margin-bottom: 0rem;
+            margin-top: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight: 500;
 
-        ul {
-            padding: 0.5rem 2rem;
+            @include breakpoint-up(large) {
+                font-size: 1.3rem;
+            }
         }
 
-
+        p {
+            margin-bottom: 1rem;
+            margin-top: 0.4rem;
+            font-size: 0.97rem;
+        }
     }
 
 }

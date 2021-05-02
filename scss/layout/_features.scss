@@ -22,8 +22,10 @@
         padding-top: 3.75rem;
         padding-bottom: 1.75rem;
         text-align: center;
-        color: #fff;
-        color: #000;
+
+        color: rgb(53, 53, 53);
+
+
 
         @include breakpoint-up(medium) {
             padding-top: 7rem;
@@ -46,7 +48,6 @@
             width: 670px;
             text-align: left;
             margin: 1rem;
-
         }
 
 
@@ -55,8 +56,6 @@
 
     &__icon {
         margin-right: 2rem;
-        // background: rgb(54, 54, 54);
-
     }
 
     &__text {
@@ -94,23 +93,4 @@
     height: 1px;
     background: #b38647;
     margin: 1rem auto;
-}
-
-.divider {
-    &__image {
-        background-image: url("/img/photos.png");
-        background-size: cover;
-        min-height: 11.125rem;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        @include breakpoint-up(medium) {
-            min-height: 18.75rem;
-        }
-
-        @include breakpoint-up(medium) {
-            min-height: 22.75rem;
-            background-position: left center;
-        }
-    }
 }
