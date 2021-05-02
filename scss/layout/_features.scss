@@ -1,11 +1,11 @@
 .features {
 
-    // background-image: linear-gradient(49deg, rgb(54, 54, 54), rgb(54, 54, 54), rgb(54, 54, 54), #b38647, transparent);
-    background: rgb(77, 77, 77);
+    background: rgb(241, 241, 241);
+
 
     &__content {
         padding-bottom: 3.75rem;
-        max-width: 85rem;
+        max-width: 1520px;
         margin: auto;
 
         @include breakpoint-up(medium) {
@@ -20,8 +20,10 @@
 
     &__head {
         padding-top: 3.75rem;
+        padding-bottom: 1.75rem;
         text-align: center;
         color: #fff;
+        color: #000;
 
         @include breakpoint-up(medium) {
             padding-top: 7rem;
@@ -32,15 +34,16 @@
     &__card {
         padding: 2rem 2rem 2rem 1rem;
         text-align: center;
-
-        background: #fff;
+        background: rgb(255, 255, 255);
         border-radius: 10px;
+        border: 1px solid #b38647;
         display: flex;
         align-items: center;
-
+        margin: 1rem;
+        box-shadow: 5px 5px 18px #888888;
 
         @include breakpoint-up(medium) {
-            width: 570px;
+            width: 670px;
             text-align: left;
             margin: 1rem;
 
@@ -52,42 +55,31 @@
 
     &__icon {
         margin-right: 2rem;
-
-        .circle {
-            background-image: linear-gradient(to bottom, #282C34, #b38647);
-            width: 30px;
-            height: 30px;
-
-            border-radius: 50%;
-
-            &:not(:last-child) {
-                margin-bottom: 5rem;
-            }
-
-        }
-
-
-
-
-
-
-
+        // background: rgb(54, 54, 54);
 
     }
 
     &__text {
         // padding: 1rem 2rem;
-        // text-align: justify;
+        text-align: center;
 
         ul {
+            padding: 0rem;
             list-style: none;
-            padding-left: 1rem;
+
+
         }
 
         li {
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 0.8rem;
+            line-height: 1.4;
             margin-bottom: 0.5rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+
 
         }
 
@@ -95,6 +87,13 @@
     }
 
 
+}
+
+.line {
+    width: 50px;
+    height: 1px;
+    background: #b38647;
+    margin: 1rem auto;
 }
 
 .divider {
