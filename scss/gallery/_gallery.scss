@@ -63,18 +63,3 @@
         }
     }
 }
-
-.footer__gallery {
-    background: $darkGreen;
-    color: $white;
-
-    .footer-wrapper {
-        @include breakpoint-up(medium) {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            padding-top: 4rem;
-            padding-bottom: 2rem;
-        }
-    }
-}
