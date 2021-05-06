@@ -86,7 +86,12 @@
         p {
             margin-bottom: 1rem;
             margin-top: 0.4rem;
-            font-size: 0.97rem;
+            font-size: 0.87rem;
+
+            @include breakpoint-up(large) {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 

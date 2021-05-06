@@ -1,6 +1,6 @@
 .features {
 
-    background: rgb(241, 241, 241);
+    background: rgb(235, 235, 235);
 
 
     &__content {
@@ -13,8 +13,6 @@
             flex-wrap: wrap;
             justify-content: center;
             padding-bottom: 8rem;
-
-
         }
     }
 
@@ -22,10 +20,7 @@
         padding-top: 3.75rem;
         padding-bottom: 1.75rem;
         text-align: center;
-
         color: rgb(53, 53, 53);
-
-
 
         @include breakpoint-up(medium) {
             padding-top: 7rem;
@@ -34,37 +29,60 @@
     }
 
     &__card {
-        padding: 2rem 2rem 2rem 1rem;
+
+        padding: 2rem;
         text-align: center;
         background: rgb(255, 255, 255);
         border-radius: 10px;
-        border: 1px solid #b38647;
-        display: flex;
-        align-items: center;
         margin: 1rem;
         box-shadow: 5px 5px 18px #888888;
 
+
         @include breakpoint-up(medium) {
-            width: 670px;
+            // width: 670px;
+            width: 400px;
             text-align: left;
             margin: 1rem;
         }
-
-
     }
 
 
     &__icon {
-        margin-right: 2rem;
+        background: linear-gradient(to right, rgba(14, 15, 24, 0.9), rgba(148, 85, 48, 0.73));
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        @include breakpoint-up(large) {
+            width: 60px;
+            height: 60px;
+        }
+
+        i {
+            font-size: 1.6rem;
+            color: $white;
+
+            @include breakpoint-up(large) {
+                font-size: 1.9rem;
+            }
+        }
     }
 
     &__text {
-        // padding: 1rem 2rem;
         text-align: center;
+
+
+
 
         ul {
             padding: 0rem;
             list-style: none;
+            margin-top: 2rem;
+            padding: 0rem 0.8rem;
 
 
         }
@@ -72,25 +90,13 @@
         li {
             font-size: 0.8rem;
             line-height: 1.4;
-            margin-bottom: 0.5rem;
+            // margin-bottom: 0.5rem;
 
             @include breakpoint-up(large) {
-                font-size: 1.1rem;
-                line-height: 1.6;
+                font-size: 0.95rem;
+                line-height: 1.5;
+                letter-spacing: 0rem;
             }
-
-
         }
-
-
     }
-
-
-}
-
-.line {
-    width: 50px;
-    height: 1px;
-    background: #b38647;
-    margin: 1rem auto;
 }

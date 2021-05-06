@@ -1,7 +1,7 @@
 .gallery__head {
     text-align: center;
     padding: 2.5rem 0rem 3rem;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     text-transform: capitalize;
 
@@ -29,10 +29,9 @@
     &__photo {
         margin: 0.625rem;
         height: 25.125rem;
-        // border: 1px solid $lightGray;
         box-shadow: 5px 5px 13px #b3b3b3;
         width: 20.75rem;
-        // padding: 0.925rem;
+
 
         p {
             margin: 0rem;
@@ -43,23 +42,6 @@
             width: 100%;
 
             object-fit: contain;
-        }
-    }
-
-
-}
-
-.back {
-    text-align: center;
-    padding-bottom: 3.75rem;
-
-
-    a {
-        color: $black;
-        text-decoration: underline;
-
-        @include breakpoint-up(large) {
-            font-size: 1.4rem;
         }
     }
 }

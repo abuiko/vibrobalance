@@ -1,7 +1,7 @@
 .clients__head {
     text-align: center;
     padding: 2.5rem 0rem 3rem;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     text-transform: capitalize;
 
@@ -34,8 +34,6 @@
         }
 
     }
-
-
 }
 
 .footer__clients {
@@ -51,5 +49,4 @@
             padding-bottom: 2rem;
         }
     }
-
 }

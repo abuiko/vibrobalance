@@ -39,8 +39,6 @@ h2 {
   }
 }
 
-
-
 p {
   font-size: 0.85rem;
   line-height: 1.6;
@@ -49,8 +47,6 @@ p {
     font-size: 0.95rem;
   }
 }
-
-
 
 a {
   letter-spacing: 1.2px;
@@ -80,6 +76,21 @@ li {
 
   }
 
+}
+
+.return__link {
+  text-align: center;
+  padding-bottom: 3.75rem;
+
+
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    @include breakpoint-up(large) {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 
@@ -143,4 +154,14 @@ li {
   animation-iteration-count: 1;
   animation-duration: 1.7s;
   animation-timing-function: ease-in;
+}
+
+// LINE DIVIDER 
+
+
+.line {
+  width: 50px;
+  height: 1px;
+  background: $yellow;
+  margin: 0.7rem auto;
 }
