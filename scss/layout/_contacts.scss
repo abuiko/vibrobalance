@@ -1,8 +1,6 @@
 .contact {
-    background: rgb(28, 28, 29);
-    // background-image: linear-gradient(to top, #000, transparent), url('../../dist/img/extra.jpg');
-    // background-repeat: no-repeat;
-    // background-position: center;
+    background: rgb(15, 15, 15);
+    background: linear-gradient(107deg, rgb(32, 32, 32) 35%, rgb(20, 20, 54) 100%);
 
     &__content {
         text-align: center;
@@ -16,8 +14,8 @@
 
         h2 {
             @include breakpoint-up(medium) {
-                font-size: 2.65rem;
-                font-weight: bold;
+                // font-size: 2.65rem;
+                // font-weight: bold;
             }
         }
 

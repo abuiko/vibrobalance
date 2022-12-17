@@ -1,45 +1,82 @@
 .primary-btn {
     display: inline-block;
 
-    padding: 0.5rem 1.25rem;
+    // padding: 0.5rem 1.25rem;
 
-    border-radius: 0.625rem;
-    border: 1px solid #b7c8db;
+    // border-radius: 0.625rem;
+    // border: 1px solid #b7c8db;
     // text-transform: uppercase;
     font-size: 1rem;
     transition: all 400ms ease-in-out;
 
     // background: $yellow;
-    background: #d3e8ff;
-    color: #1d1d1d;
+    // background: #d3e8ff;
+    color: #ffffff;
     font-weight: 700;
+    text-decoration: underline;
 
     &:hover {
-        border: 1px solid $white;
-        color: $white;
-        background: transparent;
+        // border: 1px solid $white;
+        color: #d3e8ff;
+        // background: transparent;
     }
 
     @include breakpoint-up(medium) {
-        font-size: 1.1rem;
-        padding: 0.9rem 1.8rem;
+        font-size: 1.2rem;
+        // padding: 0.9rem 1.8rem;
     }
 }
 
-// .about-btn {
-//     display: inline-block;
+.about-btn {
+    display: inline-block;
 
-//     font-size: 1rem;
-//     transition: all 400ms ease-in-out;
-//     margin-top: 1.3rem;
-//     color: #000000;
-//     font-weight: 500;
-//     text-decoration: underline;
-//     font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 400ms ease-in-out;
+    margin-top: 2.3rem;
+    color: #ffffff;
+    background: rgb(115, 116, 121);
+    background: linear-gradient(107deg, rgb(45, 47, 56) 35%, rgb(36, 36, 59) 60%);
+    padding: 10px 15px;
 
-//     &:hover {
-//         color: #252525;
-//     }
+    border-radius: 10px;
+    font-weight: 400;
+    // text-decoration: underline;
 
 
-// }
+    @include breakpoint-up(medium) {
+        font-size: 1rem;
+        padding: 15px 20px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+
+}
+
+.features-btn {
+
+    font-size: 0.9rem;
+    transition: all 400ms ease-in-out;
+    color: #ffffff;
+    background: rgb(115, 116, 121);
+    background: linear-gradient(107deg, rgb(45, 47, 56) 35%, rgb(36, 36, 59) 60%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    // text-decoration: underline;
+    font-weight: 400;
+
+    @include breakpoint-up(medium) {
+        font-size: 1rem;
+        padding: 15px 20px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+
+}

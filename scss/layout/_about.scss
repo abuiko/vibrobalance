@@ -1,6 +1,15 @@
 .about {
     background: #ffffff;
 
+    &__tech {
+        display: block;
+
+        // @include breakpoint-up(large) {
+        //     display: none;
+        // }
+
+    }
+
     &__content {
         padding-top: 3.875rem;
         padding-bottom: 3.875rem;
@@ -10,13 +19,14 @@
         @include breakpoint-up(medium) {
             max-width: 90rem;
             margin: auto;
-            padding-top: 5.875rem;
-            padding-bottom: 5.875rem;
+            padding-top: 7rem;
+            padding-bottom: 7rem;
         }
 
         h2 {
             margin-bottom: 3.625rem;
             text-align: center;
+            color: rgb(15, 15, 15);
 
             @include breakpoint-up(large) {
                 text-align: right;
