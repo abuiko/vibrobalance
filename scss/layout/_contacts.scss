@@ -1,5 +1,5 @@
 .contact {
-    background: rgb(44, 44, 44);
+    background: rgb(28, 28, 29);
     // background-image: linear-gradient(to top, #000, transparent), url('../../dist/img/extra.jpg');
     // background-repeat: no-repeat;
     // background-position: center;
@@ -33,16 +33,16 @@
 }
 
 .footer {
-    background: rgb(28, 28, 29);
+
 
     .footer-wrapper {
         padding-top: 2rem;
         padding-bottom: 2rem;
 
         @include breakpoint-up(medium) {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: flex-end;
             padding-top: 4rem;
             padding-bottom: 2rem;
         }
@@ -53,8 +53,8 @@
             margin: 0rem;
             font-size: 0.625rem;
             padding-top: 1rem;
-            padding-bottom: 1rem;
-            color: #fff;
+            padding-bottom: 3rem;
+            color: #000000;
 
             @include breakpoint-up(medium) {
                 font-size: 1rem;
@@ -66,8 +66,8 @@
     &__right {
         p {
             font-size: 0.5625rem;
-            font-weight: bold;
-            color: #fff;
+            font-weight: normal;
+            color: #000000;
             margin: 0rem;
 
             @include breakpoint-up(medium) {

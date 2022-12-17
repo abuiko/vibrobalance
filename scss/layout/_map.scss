@@ -20,24 +20,25 @@
 
 .map {
     @include breakpoint-up(large) {
-        display: flex;
+        // display: flex;
         padding-top: 7.5rem;
-        padding-bottom: 6.25rem;
+        padding-bottom: 7.5rem;
+        width: 60%;
     }
 
-    &__image {
+    // &__image {
 
-        @include breakpoint-up(large) {
-            position: relative;
-            min-height: 25rem;
-            margin: 3rem;
-            flex: 1;
-            background-image: url("../../dist/img/photos.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
+    //     @include breakpoint-up(large) {
+    //         position: relative;
+    //         min-height: 25rem;
+    //         margin: 3rem;
+    //         flex: 1;
+    //         background-image: url("../../dist/img/photos.png");
+    //         background-size: cover;
+    //         background-position: center;
+    //         background-repeat: no-repeat;
+    //     }
+    // }
 
     &__text {
         padding-top: 4.5625rem;
@@ -45,7 +46,7 @@
 
         @include breakpoint-up(medium) {
             flex: 1;
-            margin: 3.5rem 0rem;
+            margin: 0rem;
             padding: 0rem;
         }
     }
@@ -53,7 +54,7 @@
     &__head {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         color: #000;
         font-weight: 500;
         width: 100%;
@@ -64,7 +65,9 @@
         }
 
         @include breakpoint-up(large) {
-            margin-bottom: 2rem;
+            padding-bottom: 3rem;
+            font-size: 1.7rem;
+            margin-bottom: 0rem;
         }
     }
 
