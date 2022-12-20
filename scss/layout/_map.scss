@@ -1,44 +1,11 @@
-.divider {
-    &__image {
-        background-image: url("../../dist/img/photos.png");
-        background-size: cover;
-        min-height: 11.125rem;
-        background-repeat: no-repeat;
-        background-position: center;
-
-        @include breakpoint-up(medium) {
-            min-height: 18.75rem;
-        }
-
-        @include breakpoint-up(medium) {
-            min-height: 22.75rem;
-            background-position: left center;
-        }
-    }
-}
-
-
 .map {
     @include breakpoint-up(large) {
-        // display: flex;
+
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;
         width: 60%;
     }
 
-    // &__image {
-
-    //     @include breakpoint-up(large) {
-    //         position: relative;
-    //         min-height: 25rem;
-    //         margin: 3rem;
-    //         flex: 1;
-    //         background-image: url("../../dist/img/photos.png");
-    //         background-size: cover;
-    //         background-position: center;
-    //         background-repeat: no-repeat;
-    //     }
-    // }
 
     &__text {
         padding-top: 4.5625rem;
@@ -47,7 +14,12 @@
         @include breakpoint-up(medium) {
             flex: 1;
             margin: 0rem;
-            padding: 0rem;
+            padding: 1rem 0rem;
+        }
+
+        @include breakpoint-up(large) {
+
+            padding: 1.5rem 0rem;
         }
     }
 
