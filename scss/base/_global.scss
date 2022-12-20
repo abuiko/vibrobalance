@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+h2 {
+
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: $gray;
+  width: 90%;
+  margin: auto;
+
+  @include breakpoint-up(medium) {
+    font-size: 1.5rem;
+  }
+
+  @include breakpoint-up(large) {
+    font-size: 2.1rem;
+  }
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+
+  @include breakpoint-up(medium) {
+    font-size: 0.95rem;
+  }
+}
+
+a {
+  letter-spacing: 1.2px;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+
+}
+
+li {
+  font-size: 0.825rem;
+
+  @include breakpoint-up(medium) {
+    font-size: 1rem;
+
+  }
+
+  @include breakpoint-up(large) {
+    font-size: 1.1rem;
+
+  }
+
+}
+
+.return__link {
+  text-align: center;
+  padding-bottom: 3.75rem;
+
+
+  a {
+    color: $black;
+    text-decoration: underline;
+    letter-spacing: 0;
+
+    @include breakpoint-up(large) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+// Flexbox
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+
+
+//Containers
+.container {
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.container-pall {
+  padding-top: 9.8125rem;
+  padding-bottom: 9.4375rem;
+}
+
+// Visibility
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+// fade-in animation
+
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  animation-name: fade-in;
+  animation-iteration-count: 1;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-in;
+}
+
+// LINE DIVIDER 
+
+
+.line {
+  width: 30px;
+  height: 1px;
+  background: #000000;
+  margin: 0.7rem auto;
+}

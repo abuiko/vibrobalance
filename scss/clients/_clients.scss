@@ -1,0 +1,52 @@
+.clients__head {
+    text-align: center;
+    padding: 2.5rem 0rem 3rem;
+    color: $white;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    @include breakpoint-up(large) {
+        padding: 1rem 2rem 5rem;
+        font-weight: 700;
+        font-size: 2.6rem;
+        width: 80%;
+        margin: 3.75rem auto 0;
+    }
+}
+
+.clients {
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 3.75rem;
+        padding-top: 2.75rem;
+    }
+
+    &__column {
+        list-style: disc;
+        padding-left: 0.6rem;
+
+
+        li {
+            line-height: 1.6;
+        }
+
+    }
+}
+
+.footer__clients {
+    background: $darkGreen;
+    color: $white;
+
+    .footer-wrapper {
+        @include breakpoint-up(medium) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
