@@ -19,7 +19,7 @@
 .about-btn {
     display: inline-block;
 
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 400ms ease-in-out;
     margin-top: 2.3rem;
     color: #ffffff;
@@ -32,8 +32,8 @@
 
 
     @include breakpoint-up(medium) {
-        font-size: 1rem;
-        padding: 15px 20px;
+        font-size: 0.9rem;
+        padding: 13px 40px;
         font-weight: 700;
     }
 
@@ -46,20 +46,28 @@
 
 .features-btn {
 
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 400ms ease-in-out;
-    color: #ffffff;
-    background: rgb(115, 116, 121);
-    background: linear-gradient(107deg, rgb(45, 47, 56) 35%, rgb(36, 36, 59) 60%);
+    color: #4e4e4e;
+    background-color: #ffffff;
+    // background-image: url('./dist/icons/next.png') no-repeat right center;
+    // background: rgb(115, 116, 121);
+    // background: linear-gradient(107deg, rgb(45, 47, 56) 35%, rgb(36, 36, 59) 60%);
     padding: 10px 15px;
     border-radius: 10px;
     font-weight: 400;
 
+
+
+
+
     @include breakpoint-up(medium) {
         font-size: 1rem;
-        padding: 15px 20px;
+        padding: 13px 50px;
         font-weight: 700;
     }
+
+
 
     &:hover {
         text-decoration: underline;
