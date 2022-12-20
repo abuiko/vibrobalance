@@ -60,10 +60,10 @@
     &__logo {
       color: $white;
       font-family: "Montserrat", sans-serif;
-      font-size: 1.425rem;
+      font-size: 1.325rem;
 
       @include breakpoint-up(medium) {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
 

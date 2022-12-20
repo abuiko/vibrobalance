@@ -1,3 +1,5 @@
+
+
 const burger = document.querySelector("#btnHamburger");
 const nav = document.querySelector(".header");
 const popup = document.querySelector(".header__popup");
@@ -22,3 +24,4 @@ burger.addEventListener("click", () => {
   }
 
 });
+
